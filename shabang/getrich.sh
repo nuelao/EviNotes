@@ -8,13 +8,11 @@ read name
 echo "What is your age?"
 read age
 
-
-
 random=$((RANDOM % 15))
 
-echo "Running the  Get-Rich Algorithm"
+echo "......Initailisng the  Get-Rich Algorithm......."
 
-sleep 5
+sleep 3
 
 getrich=$(($random + $age))
 
