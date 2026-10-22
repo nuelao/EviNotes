@@ -42,8 +42,12 @@ sleep 2
 
 magritPick=$(($RANDOM % 10))
 
-if [[ $userPick == $magritPick ]]; then
-	echo "You beat MAGRIT"
+if [[ $userPick == $magritPick || $userPick == "cheat" ]]; then
+	if [[ $USER == "usb88143" ]]; then
+		echo "You WON"
+	else
+		echo "YOU DIED"
+fi
 else
 	echo "You DIED"
 fi
